@@ -4,17 +4,14 @@ const PortfolioListContent = [
     {
         image: 'bg_image--34',
         category: 'React/Redux, API, AJAX Rails, Postgresql',
-        title: 'Pokeweb'
-    },
-    {
-        image: 'bg_image--35',
-        category: 'React, AJAX, Rails, API',
-        title: 'Elevator Impersonator'
+        title: 'Pokeweb',
+        link: 'https://pokeweb.netlify.app/'
     },
     {
         image: 'bg_image--20',
         category: 'React, AJAX, API',
-        title: 'Motiv8'
+        title: 'Motiv8',
+        link: 'https://motiv8-app.netlify.app/'
     },
     // {
     //     image: 'image-2',
@@ -49,9 +46,9 @@ class PortfolioList extends Component{
                             <div className="content">
                                 <div className="inner">
                                     <p>{value.category}</p>
-                                    <h4><a href="/portfolio-details">{value.title}</a></h4>
+                                    <h4>{value.title}</h4>
                                     <div className="portfolio-button">
-                                        <a className="rn-btn" href="/portfolio-details">View Details</a>
+                                        <a className="rn-btn" href={value.link}>Go to project</a>
                                     </div>
                                 </div>
                             </div>
