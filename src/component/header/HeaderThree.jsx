@@ -4,10 +4,9 @@ import { FiX , FiMenu} from "react-icons/fi";
 import Scrollspy from 'react-scrollspy'
 
 const SocialShare = [
-    {Social: <FaFacebookF /> , link: 'https://www.facebook.com/'},
-    {Social: <FaLinkedinIn /> , link: 'https://www.linkedin.com/'},
-    {Social: <FaInstagram /> , link: 'https://www.instagram.com/'},
-    {Social: <FaTwitter /> , link: 'https://twitter.com/'},
+    {Social: <FaFacebookF /> , link: 'https://www.facebook.com/jonathan.guzman.18041'},
+    {Social: <FaLinkedinIn /> , link: 'https://www.linkedin.com/in/johnathan-guzman'},
+    {Social: <FaTwitter /> , link: 'https://twitter.com/JohnathanGuzma9'},
 ]
 class HeaderThree extends Component{
     constructor(props) {
@@ -72,16 +71,14 @@ class HeaderThree extends Component{
                     <div className="header-left d-flex align-items-center">
                         <div className="logo">
                             <a href={this.props.homeLink}>
-                                {logoUrl}
+                            <img src="/assets/images/logo/logo-15.png" alt="Digital Agency" />
                             </a>
                         </div>
                         <nav className="mainmenunav d-lg-block ml--50">
-                            <Scrollspy className="mainmenu" items={['home','about','service','portfolio','blog','contact']} currentClassName="is-current" offset={-200}>
+                            <Scrollspy className="mainmenu" items={['home','about','portfolio','contact']} currentClassName="is-current" offset={-200}>
                                 <li><a href="#home">Home</a></li>
                                 <li><a href="#about">About</a></li>
-                                <li><a href="#service">Service</a></li>
                                 <li><a href="#portfolio">Portfolio</a></li>
-                                <li><a href="#blog">Blog</a></li>
                                 <li><a href="#contact">Contact</a></li>
                             </Scrollspy>
                         </nav>
@@ -94,11 +91,7 @@ class HeaderThree extends Component{
                                 ))}
                             </ul>
                         </div>
-                        <div className="header-btn">
-                            <a className="rn-btn" href="https://themeforest.net/checkout/from_item/25457315?license=regular">
-                                <span>buy now</span>
-                            </a>
-                        </div>
+                       
                         {/* Start Humberger Menu  */}
                         <div className="humberger-menu d-block d-lg-none pl--20">
                             <span onClick={this.menuTrigger} className="menutrigger text-white"><FiMenu /></span>

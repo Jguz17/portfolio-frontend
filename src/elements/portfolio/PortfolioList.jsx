@@ -2,35 +2,35 @@ import React, { Component } from "react";
 
 const PortfolioListContent = [
     {
-        image: 'image-1',
-        category: 'Development',
-        title: 'Getting tickets to the big show'
+        image: 'bg_image--34',
+        category: 'React/Redux, API, AJAX Rails, Postgresql',
+        title: 'Pokeweb'
     },
     {
-        image: 'image-2',
-        category: 'Development',
-        title: 'Getting tickets to the big show'
+        image: 'bg_image--35',
+        category: 'React, AJAX, Rails, API',
+        title: 'Elevator Impersonator'
     },
     {
-        image: 'image-3',
-        category: 'Development',
-        title: 'Getting tickets to the big show'
+        image: 'bg_image--20',
+        category: 'React, AJAX, API',
+        title: 'Motiv8'
     },
-    {
-        image: 'image-4',
-        category: 'Development',
-        title: 'Getting tickets to the big show'
-    },
-    {
-        image: 'image-3',
-        category: 'Development',
-        title: 'Getting tickets to the big show'
-    },
-    {
-        image: 'image-4',
-        category: 'Development',
-        title: 'Getting tickets to the big show'
-    }
+    // {
+    //     image: 'image-2',
+    //     category: 'Development',
+    //     title: 'Getting tickets to the big show'
+    // },
+    // {
+    //     image: 'image-3',
+    //     category: 'Development',
+    //     title: 'Getting tickets to the big show'
+    // },
+    // {
+    //     image: 'image-4',
+    //     category: 'Development',
+    //     title: 'Getting tickets to the big show'
+    // }
 ]
 
 class PortfolioList extends Component{

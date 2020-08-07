@@ -10,6 +10,11 @@ class ContactThree extends Component{
             rnMessage: '',
         };
     }
+
+    // handleSubmit = (e) => {
+    //     e.preventDefault();
+    //     console.log(this.state)
+    // }
     render(){
         return(
             <div className="contact-form--1">
@@ -17,9 +22,9 @@ class ContactThree extends Component{
                     <div className="row row--35 align-items-start">
                         <div className="col-lg-6 order-2 order-lg-1">
                             <div className="section-title text-left mb--50">
-                                <h2 className="title">{this.props.contactTitle}</h2>
-                                <p className="description">I am available for freelance work. Connect with me via phone: <a href="tel:+8801923088574">01923 088574</a> or email:
-                                    <a href="mailto:admin@example.com"> admin@example.com</a> </p>
+                                <h2 className="title">Contact</h2>
+                                <p className="description">I am actively seeking a Frontend Engineer role. You can reach me via cell at: <a href="tel:+773-574-4928">773-574-4928</a> or email:
+                                    <a href="mailto:johnathanguzman17@gmail.com"> johnathanguzman17@gmail.com</a> </p>
                             </div>
                             <div className="form-wrapper">
                                 <form>
