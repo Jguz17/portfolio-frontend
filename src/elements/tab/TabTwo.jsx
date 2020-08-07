@@ -4,10 +4,10 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 class TabsTwo extends Component{
     render(){
         let 
-        tab1 = "Main skills",
-        tab2 = "Awards",
-        tab3 = "Experience",
-        tab4 = "Education & Certification";
+        tab1 = "Technical skills",
+        tab2 = "Soft Skills",
+        tab3 = "Work Experience",
+        tab4 = "Education";
         const { tabStyle } = this.props
         return(
             <div>
@@ -28,18 +28,24 @@ class TabsTwo extends Component{
                                         <div className="single-tab-content">
                                             <ul>
                                                 <li>
-                                                    <a>Frontend</a>
+                                                    <a>Frontend:</a>
                                                    <ul>
-                                                       <li>React</li>
+                                                       <li>Javascript, React, Redux</li>
                                                    </ul>
                                                 </li>
                                                 <li>
-                                                    <a href="/service">Web and user interface design<span> - Development</span></a>
-                                                    Websites, web experiences, ...
+                                                    <a>Backend:</a>
+                                                    <ul>
+                                                        <li>
+                                                            Rails, Mysql, Sqlite, Postgresql
+                                                        </li>
+                                                    </ul>
                                                 </li>
                                                 <li>
-                                                    <a href="/service">Interaction design <span> - Animation</span></a>
-                                                    I like to move it move it.
+                                                    <a>Other:</a>
+                                                    <ul>
+                                                        <li>Html, Css, Bootstrap, Material UI, AJAX, OOP, Agile Development, APIs, and more!</li>
+                                                    </ul>
                                                 </li>
                                             </ul>
                                         </div>
@@ -49,14 +55,26 @@ class TabsTwo extends Component{
                                        <div className="single-tab-content">
                                            <ul>
                                                <li>
-                                                   <a href="/service">Awwwards.com <span>- Winner</span></a> 2019 - 2020
+                                                   Collaberative
                                                </li>
                                                <li>
-                                                   <a href="/service">CSS Design Awards <span>- Winner</span></a> 2017 - 2018
+                                                   Adaptable
                                                </li>
                                                <li>
-                                                   <a href="/service">Design nominees <span>- site of the day</span></a> 2013- 2014
+                                                   Communicative
                                                </li>
+                                               <li>
+                                                   Passionate
+                                               </li>
+                                               <li>
+                                                   Self-motivated
+                                               </li>
+                                               <li>
+                                                    Teamwork
+                                                </li>
+                                                <li>
+                                                    Customer Service
+                                                </li>
                                            </ul>
                                        </div>
                                     </TabPanel>
@@ -67,14 +85,14 @@ class TabsTwo extends Component{
                                        <div className="single-tab-content">
                                            <ul>
                                                <li>
-                                                   <a href="/service">Sr. Front-end Engineer<span> - Google</span></a> 2018 - Current
+                                                   <a>Loan Processor <span> - American Nationwide Mortgage Company (02/2019-10/2019)</span></a>
+                                                   Recorded and solved loan issues per deadlines. Planned out loan process closed files more efficiently. Studied loan terms and practices outside of work. Produced leads using Facebook Ad campaigns.
                                                </li>
                                                <li>
-                                                   <a href="/service">Front-end Engineer<span> - Microsoft</span></a> 2017 - 2018
+                                                   <a>Operations Manager <span> - Gopuff(startup) (10/2017-11/2018)</span></a>
+                                                   Led and influenced 10+ managers to meet quotas before due dates by holding daily meetings. Oversaw 75+ employees and guided them to their goals for that day. Communicated with appropriate channels per required task. Packed and manually routed orders to be delivered. Supported employees when faced with difficult challenges at work and hired and supported new managers.
                                                </li>
-                                               <li>
-                                                   <a href="/service">Software Engineer<span> - Alibaba </span></a> 2013- 2014
-                                               </li>
+                                               
                                            </ul>
                                        </div>
                                     </TabPanel>
@@ -83,14 +101,12 @@ class TabsTwo extends Component{
                                        <div className="single-tab-content">
                                            <ul>
                                                <li>
-                                                   <a href="/service">BSc In CSE<span> - ABC University, Los Angeles, CA</span></a> 2010
+                                                   <a>Fullstack Web Development(Rails,React/Redux Stack)<span> - Flatiron School, Chicago, IL</span></a> (03/2020-07/2020)
                                                </li>
                                                <li>
-                                                   <a href="/service">Diploma in Computer Science<span> - Gamma Technical Institute</span></a> 2009
+                                                   <a>A.S in Computer Science(Unfinished)<span> - Wilbur Wright College</span></a> (09/2018-09/2019)
                                                </li>
-                                               <li>
-                                                   <a href="/service">Graphic Designer<span> - ABC Institute, Los Angeles, CA</span></a> 2007
-                                               </li>
+                                               
                                            </ul>
                                        </div>
                                     </TabPanel>

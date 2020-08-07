@@ -8,8 +8,6 @@ import FooterTwo from "../component/footer/FooterTwo";
 import TabTwo from "../elements/tab/TabTwo";
 import ContactThree from "../elements/contact/ContactThree";
 import PortfolioList from "../elements/portfolio/PortfolioList";
-import ServiceList from "../elements/service/ServiceList";
-import BlogContent from "../elements/blog/BlogContent";
 
 const SlideList = [
     {
@@ -22,8 +20,7 @@ const SlideList = [
 ]
 const PortfolioLanding = () => {
     let title = 'About Me',
-        description = "Hi ! This is me(before I dyed my hair), touching some type of tree. I'm a full stack developer with a thirst for knowledge. I like finding new ways to solve simple/complex problems. In my toolkit, I have React/Redux for front end work and Rails with Postgresql for backend work.";
-    const PostList = BlogContent.slice(0 , 3);
+        description = "Hi ! This is me(before I dyed my hair), touching some type of tree. I like going on random and spontaneous adventures(yes, really). I'm an ambitious yet curious full stack developer with a thirst for knowledge. I like finding new ways to solve simple/complex problems. In my toolkit, I have React/Redux for front end work and Rails with Postgresql for backend work.";
     return (
         <div className="active-dark">
             <Helmet pageTitle="Portfolio Landing" />
@@ -91,50 +88,21 @@ const PortfolioLanding = () => {
             
             {/* End About Area */}
 
-            {/* Start Service Area  */}
-            <div id="service" className="fix">
-                <div className="service-area creative-service-wrapper ptb--120 bg_color--5" >
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12">
-                                <div className="section-title text-center service-style--3 mb--30 mb_sm--0">
-                                    <h2 className="title">My Awesome Service</h2>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="row creative-service">
-                            <div className="col-lg-12">
-                                <ServiceList item="6" column="col-lg-4 col-md-6 col-sm-6 col-12 text-left" />
-                            </div>
-                        </div>
-                    </div>
-                </div>  
-            </div>
-            {/* End Service Area  */} 
-
             {/* Start Portfolio Area */}
             <div id="portfolio" className="fix">
-                <div className="portfolio-area ptb--120 bg_color--1">
+                <div className="portfolio-area ptb--120 bg_color--5">
                     <div className="portfolio-sacousel-inner">
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-12">
                                     <div className="section-title text-center service-style--3 mb--30 mb_sm--0">
-                                        <h2 className="title">My Latest Project</h2>
-                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+                                        <h2 className="title">My Latest Projects</h2>
+                                        <p>Here are some of the latest additions to my projects list =D</p>
                                     </div>
                                 </div>
                             </div>
                             <div className="row">
                                 <PortfolioList styevariation="text-center mt--40" column="col-lg-4 col-md-6 col-sm-6 col-12" item="6" />
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-12">
-                                    <div className="view-more-btn mt--60 mt_sm--30 text-center">
-                                        <a className="rn-button-style--2 btn-solid" href="/blog"><span>View More</span></a>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -142,47 +110,10 @@ const PortfolioLanding = () => {
             </div>
             {/* End Portfolio Area */}
 
-            {/* Start Blog Area */}
-            <div id="blog" className="fix">
-                <div className="rn-blog-area ptb--120 bg_color--5 mb-dec--30">
-                    <div className="container">
-                        <div className="row align-items-end">
-                            <div className="col-lg-12 col-md-12 col-sm-12 col-12">
-                                <div className="section-title text-center">
-                                    <h2>Latest News</h2>
-                                    <p>There are many variations of passages of Lorem Ipsum available, <br />but the majority have suffered alteration.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="row mt--60 mt_sm--40">
-                            {PostList.map((value , i ) => (
-                                <div className="col-lg-4 col-md-6 col-12" key={i}>
-                                    <div className="blog blog-style--1">
-                                        <div className="thumbnail">
-                                            <a href="/blog-details">
-                                                <img className="w-100" src={`/assets/images/blog/blog-${value.images}.jpg`} alt="Blog Images"/>
-                                            </a>
-                                        </div>
-                                        <div className="content">
-                                            <p className="blogtype">{value.category}</p>
-                                            <h4 className="title"><a href="/blog-details">{value.title}</a></h4>
-                                            <div className="blog-btn">
-                                                <a className="rn-btn text-white" href="/blog-details">Read More</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>    
-                    </div>    
-                </div>
-            </div>
-            {/* End Blog Area */}
-
             {/* Start COntact Area */}
             <div id="contact" className="fix">
                 <div className="rn-contact-area ptb--120 bg_color--1">
-                    <ContactThree contactImages="/assets/images/about/about-9.jpg" contactTitle="Hire Me." />
+                    <ContactThree contactImages="/assets/images/about/about-12.jpg"/>
                 </div>
             </div>
             {/* End COntact Area */}
